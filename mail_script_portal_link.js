@@ -20,7 +20,9 @@
 
     var url = '<a href="' + gs.getProperty('glide.servlet.uri') + 'esc?id=ticket&table=' + current.sys_class_name + '&sys_id=' + current.sys_id + '" style="' + backgroundColor + border + color + fontSize + fontFamily + textDecoration + webKitBorder + mozBorder + display + padding +'">Spot portal</a>';
     // gs (GlideSystem) function gets instance url, class name gets table
+    // css styling has to be done as tag attribute, each defined seperatley
 
     template.print(url);
+    // Prints to email
 
 })(current, template, email, email_action, event);
